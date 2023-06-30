@@ -201,6 +201,28 @@ footer a{
     text-decoration: none;
 }
 
+.footer-title{
+    color: #4CAF50;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.footer-section {
+    height: auto;
+    padding: 80px 0;
+    color: #fff;
+    position: relative;
+ }
+
+.footer-contents{
+    position: absolute;
+    color: #000;
+    gap: 60px;
+    right: 30px;
+}
+
 
 
 

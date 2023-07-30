@@ -159,9 +159,20 @@ body {
     margin-bottom: 50px !important;
 }
 
+.schedule-image {
+    position: relative;
+    /* width: 300px;
+    margin-bottom: 50px !important; */
+}
+
 @media only screen and (max-width: 400px) {
     .hero-image {
         width: 100% !important;
+    }
+
+    .schedule-image {
+        position: relative;
+        width: 0%;
     }
 }
 

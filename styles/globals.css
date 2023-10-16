@@ -20,6 +20,9 @@ body {
 
 @layer components {
   .container {
-    @apply max-w-[1212px] mx-auto max-lg:px-[16px]
+    @apply max-w-[1212px] mx-auto max-[1230px]:px-[16px]
+  }
+  .container-small {
+    @apply max-w-[1006px] ml-[150px] max-xl:ml-0 max-[1050px]:px-[16px]
   }
 }

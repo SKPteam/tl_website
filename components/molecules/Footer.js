@@ -37,8 +37,8 @@ const Footer = () => {
             <div>
               <h6 className='text-[#1F1F1F] text-[20px] font-semibold leading-[28px] mb-[20px]'>Legal</h6>
               <ul className='flex flex-col gap-5'>
-              <li><Link href='/' className='text-[#555] text-[18px] font-medium leading-[26px]'>Terms & Agreements</Link></li>
-              <li><Link href='/' className='text-[#555] text-[18px] font-medium leading-[26px]'>Privacy policy</Link></li>
+              <li><Link href='/terms-and-condition' className='text-[#555] text-[18px] font-medium leading-[26px]'>Terms & Agreements</Link></li>
+              <li><Link href='/privacy-policy' className='text-[#555] text-[18px] font-medium leading-[26px]'>Privacy policy</Link></li>
               </ul>
             </div>
           </div>

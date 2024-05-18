@@ -39,9 +39,9 @@ body {
     font-weight: normal !important;
 }
 
-.gray-image {
+/* .gray-image {
     filter: grayscale(100%) !important;
-}
+} */
 
 /* ========================  
     2. P R E L O A D E R  
@@ -84,15 +84,10 @@ body {
     }
 }
 
-@media screen and (max-width: 576px) {
-
-    /* mobile configuration for preloader */
-    #preloader .progress {
-        height: 5px !important;
-        width: 280px !important;
-    }
+#preloader .progress {
+    height: 5px !important;
+    width: 280px !important;
 }
-
 
 .nav-item {
     position: relative;
@@ -166,17 +161,6 @@ body {
     margin-bottom: 50px !important; */
 }
 
-@media only screen and (max-width: 400px) {
-    .hero-image {
-        width: 100% !important;
-    }
-
-    .schedule-image {
-        position: relative;
-        width: 0%;
-    }
-}
-
 .hero-bg {
     position: absolute;
     bottom: 0px;
@@ -236,206 +220,6 @@ body {
     background-color: #8a8a8a;
 }
 
-
-
-
-/* NEW FOOTER SECTION */
-
-footer a{
-    text-decoration: none;
-}
-
-.footer-title{
-    color: #4CAF50;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 140%;
-}
-
-/* .footer-section {
-    height: auto;
-    padding: 80px 0;
-    color: #fff;
-    position: relative;
- }
-
-.footer-contents{
-    position: absolute;
-    color: #000;
-    gap: 60px;
-    right: 30px;
-} */
-.footer-section .container{
-    padding: 0 2rem 1rem;
-}
-.footer-section .row{
-    display: flex;
-    align-items: center;
-    margin-bottom: 3rem;
-    border-bottom: 1px solid #000;
-}
-.footer-logo{
-    height: 10rem;
-}
-.footer-col{
-    flex-basis: 30%;
-}
-.footer-links{
-    flex-basis: 70%;
-    display: flex;
-    justify-content: space-between;
-}
-.footer-links a{
-    color: #000;
-}
-.social-links{
-    max-width: 25rem;
-    display: flex;
-    justify-content: space-between;
-}
-.social-links a{ 
-    display: inline-block;
-    width: 40px; 
-    height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid #000;
-    line-height: 40px;
-    color: #000;
-    transition: 0.3s;
-}
-.fa-facebook-f,
-.fa-twitter,
-.fa-instagram,
-.fa-linkedin-in{
-    font-size: 1.3rem;
-    vertical-align: middle;
-}
-@media screen and (max-width: 768px) {
-    .footer-section .row{
-        flex-direction: column;
-        text-align: center;
-    }
-    .footer-links{
-        flex-direction: column;
-    }
-    .footer-links a{
-        margin-bottom: 1rem;
-    }
-}
-
-
-
-
-
-
-/* footer {
-    padding: 70px 15px;
-    background-color: #fff;
-}
-
-
-.footer__row {
-     display: flex;
-    margin: auto;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row; 
-
-   
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-.footer-col {
-    display: inline-flex;
-    flex: wrap;
-    flex-direction: column;
-}
-
-
-.footer-col img {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-
-}
-
-.footer-col a {
-    font-weight: 400;
-    color: grey;
-    margin-bottom: 50px;
-}
-
-.footer-col a:hover {
-    color: green;
-}
-
-.footer-col .social-links a {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: green;
-    transition: all 0.5s ease;
-
-}
-
-
-
-
-@media screen and (max-width: 480px) {
-    .footer__row {
-        flex-direction: column;
-    }
-} */
-
-
-/* footer a{
-    text-decoration: none;
-}
-
-.footer-title{
-    color: #4CAF50;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 140%;
-}
-
-.footer-section {
-    height: auto;
-    padding: 80px 0;
-    color: #fff;
-    position: relative;
- }
-
-.footer-contents{
-    position: absolute;
-    color: #000;
-    gap: 60px;
-    right: 30px;
-} */
-
-
 /* SCROLL */
 
 .scroll-to-top {
@@ -461,3 +245,136 @@ a {
 .scroll-to-top.active {
     bottom: 30px;
 }
+
+/* Example media query for tablet */
+@media (max-width: 768px) {
+    /* Adjust styles here */
+    .navbar {
+      /* Example: Make navbar items stack vertically */
+      flex-direction: column;
+    }
+  
+    /* Example: Adjust padding/margins for smaller screens */
+    .hero-section {
+      padding-top: 50px;
+    }
+  
+    /* Example: Hide certain elements on smaller screens */
+    .d-lg-block {
+      display: none;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col {
+        margin: 20px 0;
+        text-align: center; /* Center text within the container */
+    }
+
+    .app-links {
+        display: flex;
+        flex-direction: row; /* Change flex-direction to row */
+        margin-top: 20px; /* Add margin-top as needed */
+    }
+}
+  
+/* Example media query for mobile */
+@media (max-width: 576px) {
+    /* Adjust styles here */
+    .navbar-brand img {
+      /* Example: Decrease logo size */
+      width: 40px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+    
+}
+
+
+/* ========================  F O O T E R  ======================= */
+.footer-section {
+    background-color: #eaf2ef;
+    padding: 40px 150px 60px 150px;
+}
+
+.footer-logo img {
+    height: 120px;
+}
+
+.footer-col {
+    flex: 1;
+    margin: 10px 20px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-col ul li a:hover {
+    color: #4CAF50;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    color: #000;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.app-links img {
+    height: 40px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #000;
+    margin-top: 20px;
+}
+

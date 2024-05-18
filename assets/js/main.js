@@ -16,19 +16,16 @@ if (document.readyState == 'loading') {
     });
 }
 
-
 function ready () {
+    // Your existing code for other functionality goes here
     
-    
-
+    /* ========================  S C R O L L     T O     T O P  ======================= */
+    window.addEventListener('scroll', ()=> {
+        if (window.pageYOffset > 400) {
+            document.querySelector('.scroll-to-top').classList.add('active');
+        } else {
+            document.querySelector('.scroll-to-top').classList.remove('active');
+        }
+    });
 }
 
-
-/* ========================  S C R O L L     T O     T O P  ======================= */
-window.addEventListener('scroll', ()=> {
-    if (window.pageYOffset > 400) {
-        document.querySelector('.scroll-to-top').classList.add('active');
-    } else {
-        document.querySelector('.scroll-to-top').classList.remove('active');
-    }
-})
